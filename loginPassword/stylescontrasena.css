@@ -14,6 +14,7 @@
     --text-field:#f7f7f7;
     --dark:#232830;
     --hospitalg-green: #ACD9B2;
+
 }
 
 *{
@@ -41,6 +42,7 @@ html{
  width: 150px;
  margin-bottom: 48px;
  justify-self: center;
+ display: none;
 }
 
 .title{
@@ -62,7 +64,7 @@ html{
 .form-password {
     display: flex;
     flex-direction: column;
-    margin-top: 10PXS;
+    margin-top: 10px;
 }
 .label{
     font-size: 1.2rem;
@@ -77,6 +79,7 @@ html{
     padding: 6px;
     border-radius: 8px;
     margin-bottom: 12px;
+    font-family: Quicksand ,sans-serif;
 }
 .primary-button{
     background-color: var(--hospitalg-green);
@@ -94,4 +97,10 @@ html{
 .login-button{
     margin-top: 14px;
     margin-bottom: 30x;
+}
+
+@media (max-width:640px){
+    .logo {
+    display: block;       
+    }
 }

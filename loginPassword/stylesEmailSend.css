@@ -16,6 +16,12 @@ html{
     font-size: 62.5%;
     font-family: Quicksand ,sans-serif;
 }
+.form-container{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    width: 300px;
+    justify-items: center;
+}
 
 .login{
     width: 100%;
@@ -23,8 +29,49 @@ html{
     display: grid;
     place-items: center;
 }
+.title{
+    margin: 10px;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 2.2rem;
+    text-align: center;
+    color: var(--black);
+}
 
-    .primary-button{
+.subtitle{
+    color: var(--very-light-pink);
+    margin: 12px auto;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+
+.email-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 132px;
+    height: 132px;
+    border-radius: 50%;
+    background-color: var(--text-field);
+    margin-bottom: 24px;
+}
+
+.email-image img{
+    width: 80px;
+}
+.resend {
+    font-size: 1.2rem;
+}
+.resend span{
+    color: var(--very-light-pink);
+}
+.resend a {
+    color: var(--hospitalg-green);
+    text-decoration: none;
+}
+
+.primary-button{
         background-color: var(--hospitalg-green);
         border: none;
         border-radius: 8px;
@@ -34,10 +81,11 @@ html{
         cursor: pointer;
         font-weight: bold;
         font-size: 1.8rem;
+        margin-bottom: 20px;
     
-    }
+ }
     
-    .login-button{
+.login-button{
         margin-top: 14px;
         margin-bottom: 30x;
-    }
+}
