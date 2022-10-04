@@ -1,0 +1,120 @@
+/*
+1.Posicionamiento
+2. Modelo de caja (Box borde)
+3. Tipografia
+4. Efectos visuales
+5. Ottros
+
+*/
+
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --very-light-pink: #c7c7c7;
+    --text-field:#f7f7f7;
+    --dark:#232830;
+    --hospitalg-green: #ACD9B2;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family: Quicksand ,sans-serif;
+}
+
+.login{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+.form-container{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    width: 282px;
+}
+.logo{
+ width: 150px;
+ margin-bottom: 48px;
+ justify-self: center;
+ display: none;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10PXS;
+}
+.form a{
+    color: var(--hospitalg-green);
+    font-size: 1.4rem;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 52px;
+}
+.label{
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 4px;
+    font-weight: bold;
+    
+}
+.input{
+    background-color: var(--text-field);
+    border: none;
+    padding: 6px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    font-family:Quicksand ,sans-serif;
+}
+
+
+.primary-button{
+    background-color: var(--hospitalg-green);
+    border: none;
+    border-radius: 8px;
+    color: var(--white);
+    height: 50px;
+    width: 100%;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.8rem;
+
+}
+.input_email{
+margin-bottom: 12px;
+}
+
+.login-button{
+    margin-top: 14px;
+    margin-bottom: 30px;
+}
+
+.secundary-button{
+    background-color: white;
+    border: 1px solid var(--hospitalg-green);
+    border-radius: 8px;
+    color: var(--hospitalg-green);
+    height: 50px;
+    width: 100%;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.8rem;
+
+}
+  
+@media (max-width:640px){
+    .logo {
+    display: block;       
+    }
+    .secundary-button{
+        width: 300px;
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 24px;
+    }
+}
