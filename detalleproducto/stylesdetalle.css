@@ -1,0 +1,102 @@
+/*
+1.Posicionamiento
+2. Modelo de caja (Box borde)
+3. Tipografia
+4. Efectos visuales
+5. Ottros
+
+*/
+
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --very-light-pink: #c7c7c7;
+    --text-field:#f7f7f7;
+    --dark:#232830;
+    --hospitalg-green: #ACD9B2;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family: Quicksand ,sans-serif;
+}
+.product-detail{
+    position: absolute;
+    right: 0;
+    width: 360px;
+    padding-bottom: 24px;
+}
+.product-detail-close{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:var(--white);
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    top: 20px;
+    left: 20px;
+    padding: 8px;
+    border-radius: 50%;
+    border: 1px solid var(--very-light-pink);
+}
+.product-detail-close:hover{
+    cursor: pointer;
+}
+.product-detail >img:nth-child(2){
+    width: 360px;
+    height: 360px;
+    object-fit: cover;
+    border-radius: 0 0 20px 20px;
+}
+
+.primary-button{
+    background-color: var(--hospitalg-green);
+    border: none;
+    border-radius: 8px;
+    color: var(--white);
+    height: 50px;
+    width: 100%;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.8rem;
+} 
+.product-info{
+    margin: 24px 24px 0 24px;
+}
+.product-info p:nth-child(1){
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin-bottom: 4px;
+}
+.product-info p:nth-child(2){
+    color: var(--very-light-pink);;
+    font-size: 1.2rem;
+    margin-bottom: 36px;
+}
+.product-info p:nth-child(3){
+    color: var(--very-light-pink);;
+    font-size: 1.1rem;
+    margin-bottom: 36px;
+}
+
+.add-to-cart-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media(max-width:640px){
+.product-detail{
+width: 100%;
+}
+.product-detail >img:nth-child(2){
+    width: 100%;
+}
+}
