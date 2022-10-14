@@ -1,0 +1,121 @@
+/*
+1.Posicionamiento
+2. Modelo de caja (Box borde)
+3. Tipografia
+4. Efectos visuales
+5. Ottros
+
+*/
+
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --very-light-pink: #c7c7c7;
+    --text-field:#f7f7f7;
+    --dark:#232830;
+    --hospitalg-green: #ACD9B2;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family: Quicksand ,sans-serif;
+}
+.product-detail{
+    position: absolute;
+    right: 0;
+    width: 360px;
+    padding: 24px;
+    box-sizing: border-box;
+}
+.title-containter{
+    display: flex;
+}
+.title-containter img{
+    transform: rotate(180deg );
+    margin:0px 14px;
+    height: auto;
+    width: 8px;
+}
+
+.title{
+    font-size: 2.4rem;
+    font-weight: bold;
+    margin: 24px 0px ;
+}
+.order{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 16px;
+    align-items: center;
+    background-color: var(--text-field);
+    margin-bottom: 24px;
+    border-radius: 8px;
+    padding: 0 24px;
+    height: 52px;
+}
+.order p:nth-child(1){
+ display: flex;
+ flex-direction: column;
+ font-size: 1.5rem;
+}
+.order p span:nth-child(1){
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.order p span:nth-child(2){
+    font-size: 1.3rem;
+    color: var(--very-light-pink);
+}
+.order p:nth-child(2){
+    text-align: end;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+.shopping-cart{
+    display: grid;
+    grid-template-columns: auto 1fr auto auto;
+    gap: 20px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+.shopping-cart figure img {
+    width: 70px;
+    height: 70px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+.shopping-cart p:nth-child(2){
+    color: var(--very-light-pink);
+    font-size: 1.5rem;
+}
+.shopping-cart p:nth-child(3){
+font-size: 1.6rem;
+font-weight: bold;
+}
+
+.primary-button{
+    background-color: var(--hospitalg-green);
+    border: none;
+    border-radius: 8px;
+    color: var(--white);
+    height: 50px;
+    width: 100%;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.8rem;
+} 
+
+@media(max-width:640px){
+    .product-detail{
+    width: 100%;
+    }
+    .product-detail >img:nth-child(2){
+        width: 100%;
+    }
+    }
